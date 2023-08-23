@@ -1,6 +1,7 @@
 import * as React from 'react';
 import globalStyle from '../assets/styles/style'
-import { View, Text, Image, Button, TouchableOpacity, BackHandler, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
+import StyledButton from './StyledButton';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -17,15 +18,9 @@ export default class HomeScreen extends React.Component {
           <Text style={styles.logoText}> Bem vindo ao explorador de parques! </Text>
         </View>
         <View style={globalStyle.buttonContainer}>
-          <TouchableOpacity style={globalStyle.button} onPress={() => navigate('Parkss')}>
-            <Text style={globalStyle.buttonText}>Lista de Parques</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={globalStyle.button}>
-            <Text style={globalStyle.buttonText}>Parques Favoritos</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={globalStyle.button} onPress={() => BackHandler.exitApp()}>
-            <Text style={globalStyle.buttonText}>Sair</Text>
-          </TouchableOpacity>
+          <StyledButton screen={'ParkList'} text={'Lista de Parques'} navigate={navigate} />
+          <StyledButton screen={''} text={'Parques Favoritos'} navigate={navigate} />
+          <StyledButton screen={'ParkList'} text={'Sair'} navigate={navigate} exit={true} />
         </View>
       </View>
     );

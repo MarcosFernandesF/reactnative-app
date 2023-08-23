@@ -2,11 +2,11 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 import HomeScreen from './components/Home';
-import ParksScreen from './components/Parks';
+import ParksListScreen from './components/ParkList';
 
 const MainNavigator = createStackNavigator({
 	Home: {screen:HomeScreen},
-	Parkss: {screen:ParksScreen},
+	ParkList: {screen:ParksListScreen},
 });
  
 const App = createAppContainer(MainNavigator);
