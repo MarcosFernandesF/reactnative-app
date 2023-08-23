@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, FlatList } from 'react-native';
 import parks from '../assets/mock/ParksMock.json';
-import globalStyle from '../assets/styles/style'
+import StyledButton from './StyledButton';
 
 export default class ParksListScreen extends React.Component {
   static navigationOptions = {
@@ -9,14 +9,13 @@ export default class ParksListScreen extends React.Component {
   };
 
 render () {
+  const {navigate} = this.props.navigation;
   return(
     <FlatList
     data={parks}
     renderItem={({item}) =>
-      <View style={globalStyle.buttonContainer}>
-        <TouchableOpacity style={globalStyle.button} onPress={() => navigate('Parks')}>
-          <Text style={globalStyle.buttonText}>{item.name}</Text>
-        </TouchableOpacity>
+      <View style={styles.container}>
+        <StyledButton text={item.name} navigate={navigate} screen={'ParkDetails'} item={item} />
       </View>}
     />
   );
@@ -24,11 +23,10 @@ render () {
 }
 
 const styles = StyleSheet.create({
-  container: {
-   padding: 15
-  },
-  parkName: {
-    fontSize: 18,
-    height: 44,
-  }
+	container: {
+		marginTop: 20,
+		padding: 15,
+		alignItems: 'center',
+        justifyContent: 'center',
+  	},
 })

@@ -4,11 +4,11 @@ import { BackHandler, Text, TouchableOpacity } from 'react-native';
 
 export default class StyledButton extends React.Component {
 	render () {
-		const { navigate, screen, text, exit = false } = this.props;
+		const { navigate, park, screen = '', text, exit = false } = this.props;
 		return (
 			<TouchableOpacity 
 				style={globalStyle.button} 
-				onPress={() => !exit ? navigate(screen) : BackHandler.exitApp()}>
+				onPress={() => !exit ? navigate(screen, {park: park}) : BackHandler.exitApp()}>
 				<Text style={globalStyle.buttonText}>{text}</Text>
 			</TouchableOpacity>
 		);

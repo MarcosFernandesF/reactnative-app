@@ -8,5 +8,25 @@
     "name": "Parque Tupã",
     "address": "Centro, Florianópolis - SC, 88010-400",
     "hours": "Terça-feira à Domingo, das 17h às 21h"
+  },
+  {
+    "name": "3",
+    "address": "Rod. Beto Carrero World - Praia de Armação do Itapocorói, Penha - SC, 88385-000",
+    "hours": "Quinta-feira à Domingo, das 10h às 19h"
+  },
+  {
+    "name": "4",
+    "address": "Centro, Florianópolis - SC, 88010-400",
+    "hours": "Terça-feira à Domingo, das 17h às 21h"
+  },
+  {
+    "name": "5",
+    "address": "Rod. Beto Carrero World - Praia de Armação do Itapocorói, Penha - SC, 88385-000",
+    "hours": "Quinta-feira à Domingo, das 10h às 19h"
+  },
+  {
+    "name": "6",
+    "address": "Centro, Florianópolis - SC, 88010-400",
+    "hours": "Terça-feira à Domingo, das 17h às 21h"
   }
 ]
