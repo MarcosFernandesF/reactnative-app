@@ -1,4 +1,5 @@
 import * as React from 'react';
+import globalStyle from '../assets/styles/style'
 import { View, Text, Image, Button, TouchableOpacity, BackHandler, StyleSheet } from 'react-native';
 
 export default class HomeScreen extends React.Component {
@@ -12,18 +13,18 @@ export default class HomeScreen extends React.Component {
     return (
       <View>
         <View style={styles.container}>
-          <Image style={styles.logoImage} source={require('../assets/park-logo.png')}/>
+          <Image style={styles.logoImage} source={require('../assets/images/park-logo.png')}/>
           <Text style={styles.logoText}> Bem vindo ao explorador de parques! </Text>
         </View>
-        <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button} onPress={() => navigate('Parks')}>
-            <Text style={styles.buttonText}>Lista de Parques</Text>
+        <View style={globalStyle.buttonContainer}>
+          <TouchableOpacity style={globalStyle.button} onPress={() => navigate('Parkss')}>
+            <Text style={globalStyle.buttonText}>Lista de Parques</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Parques Favoritos</Text>
+          <TouchableOpacity style={globalStyle.button}>
+            <Text style={globalStyle.buttonText}>Parques Favoritos</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => BackHandler.exitApp()}>
-            <Text style={styles.buttonText}>Sair</Text>
+          <TouchableOpacity style={globalStyle.button} onPress={() => BackHandler.exitApp()}>
+            <Text style={globalStyle.buttonText}>Sair</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -46,23 +47,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
     fontWeight: 'bold'
-  },
-  buttonContainer: {
-    marginTop: -20,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    backgroundColor: 'lightseagreen',
-    width: '50%',
-    marginTop: 20,
-    padding: 15,
-    borderRadius: 10,
-  },
-  buttonText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center', // Alinhar o texto no centro do botão
   },
 })

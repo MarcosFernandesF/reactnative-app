@@ -1,23 +1,15 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Button, ActivityIndicator, ScrollView, FlatList, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import parks from '../ParksMock.json';
 
-export default class ParksList extends React.Component {
+export default class ParksScreen extends React.Component {
   static navigationOptions = {
-    title: 'Lista de Parques',
+	title: 'Lista de Parques',
   };
 
-  render () {
+render () {
     return(
-      <ScrollView style={styles.container}> 
-        <FlatList
-          data={parks}
-          renderItem={({item}) =>
-          <View>
-            <Text style={styles.parkName}>{item.name}</Text>
-          </View>}
-        />
-      </ScrollView>
+    	<Text>teste1</Text>
     );
   }
 }
