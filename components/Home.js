@@ -17,10 +17,13 @@ export default class HomeScreen extends React.Component {
         </View>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={() => navigate('Parks')}>
-            <Text style={styles.buttonText}>Lista de parques</Text>
+            <Text style={styles.buttonText}>Lista de Parques</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonText}>Parques Favoritos</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => BackHandler.exitApp()}>
+            <Text style={styles.buttonText}>Sair</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -30,6 +33,7 @@ export default class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 30,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 60,
@@ -44,8 +48,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   buttonContainer: {
-    marginTop: 20,
+    marginTop: -20,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   button: {
     backgroundColor: 'lightseagreen',
