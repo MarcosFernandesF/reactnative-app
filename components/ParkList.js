@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, FlatList } from 'react-native';
+import { View, StyleSheet, FlatList, Image, Text } from 'react-native';
 import parks from '../assets/mock/ParksMock.json';
 import StyledButton from './StyledButton';
 
@@ -15,7 +15,9 @@ render () {
     data={parks}
     renderItem={({item}) =>
       <View style={styles.container}>
-        <StyledButton text={item.name} navigate={navigate} screen={'ParkDetails'} item={item} />
+        <Image style={styles.logo} source={{uri: item.image }} />
+        <Text>{item.cityState}</Text>
+        <StyledButton text={item.name} navigate={navigate} screen={'ParkDetails'} park={item} />
       </View>}
     />
   );
@@ -29,4 +31,8 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
         justifyContent: 'center',
   	},
+    logo: {
+      height: 160,
+      width: 200,
+    },
 })

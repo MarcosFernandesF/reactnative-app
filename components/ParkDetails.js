@@ -10,7 +10,25 @@ export default class ParkDetailsScreen extends React.Component {
 		const park = this.props.navigation.getParam('park');
 		console.log(park);
 		return (
-			<Text>{park.name}</Text>
+			<View style={styles.container}>
+				<View style={styles.flexCenter}>
+					<Text style={styles.parkTitle}>{park.name}</Text>
+				</View>
+			</View>
 		)
 	}
 }
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+	},
+	parkTitle: {
+		fontSize: 25,
+		fontWeight: 'bold',
+		marginTop: 20,
+	},
+	flexCenter: {
+		alignItems: 'center',
+	}
+})
