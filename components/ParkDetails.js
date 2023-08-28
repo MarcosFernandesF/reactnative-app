@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import Video from 'react-native-video';
 
 export default class ParkDetailsScreen extends React.Component {
     static navigationOptions = {
@@ -10,25 +11,28 @@ export default class ParkDetailsScreen extends React.Component {
 		const park = this.props.navigation.getParam('park');
 		console.log(park);
 		return (
-			<View style={styles.container}>
-				<View style={styles.flexCenter}>
-					<Text style={styles.parkTitle}>{park.name}</Text>
-				</View>
+			<View >
+				<Text style={styles.parkTitle}>{park.name}</Text>
+				<Video
+					source={{ uri: park.video }}
+					style={styles.video}
+        			controls={true}
+        			resizeMode="contain"
+				/>
 			</View>
 		)
 	}
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-	},
 	parkTitle: {
 		fontSize: 25,
 		fontWeight: 'bold',
 		marginTop: 20,
+		textAlign: 'center'
 	},
-	flexCenter: {
-		alignItems: 'center',
-	}
+	video: {
+		width: 300,
+		height: 200,
+	  },
 })
