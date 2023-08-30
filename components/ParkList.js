@@ -15,7 +15,7 @@ render () {
     data={parks}
     renderItem={({item}) =>
       <View style={styles.container}>
-        <Image style={styles.logo} source={{uri: item.image }} />
+        <Image style={styles.logo} source={{uri: item.logo }} />
         <Text>{item.cityState}</Text>
         <StyledButton text={item.name} navigate={navigate} screen={'ParkDetails'} park={item} />
       </View>}
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 		padding: 15,
 		alignItems: 'center',
-        justifyContent: 'center',
+    justifyContent: 'center',
   	},
     logo: {
       height: 160,
