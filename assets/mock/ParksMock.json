@@ -11,6 +11,12 @@
 			"https://casadoturista.com.br/wp-content/uploads/revslider/BCW/Firewhiope2.jpg"
 		],
     	"video": "https://www.youtube.com/watch?v=9fJvS5gFLoQ&ab_channel=BetoCarreroWorld",
+		"website": "https://www.betocarrero.com.br/?gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVUURCUri_wvBMXQuW8jw_sfGkzcQajxighZzqN9DHb2NDLhVo-iL58aAppUEALw_wcB",
+		"instagram": "https://www.instagram.com/betocarrero/?hl=pt-br",
+		"email": "suporteonline@betocarrero.com.br",
+		"whatsapp": "",
+		"ticketLink": "https://www.betocarrero.com.br/passaportes",
+		"ticketValue": "100 à 200",
 		"coordinates": 
 		{
 			"lat": -26.79934,
@@ -29,10 +35,85 @@
 			"https://www.tribunapr.com.br/wp-content/uploads/sites/2/2020/02/06084203/TUPA16-970x550.jpg"
 		],
 		"video": "https://www.youtube.com/watch?v=9fJvS5gFLoQ&ab_channel=BetoCarreroWorld",
+		"website": "http://www.parquedediversoes.com/park-tupa.php",
+		"instagram": "https://www.instagram.com/park_tupa/?hl=pt",
+		"email": "tupastore.online@gmail.com",
+		"whatsapp": "",
+		"ticketLink": "https://api.whatsapp.com/send?phone=5521974524737&text=Ol%C3%A1%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas.",
+		"ticketValue": "20",	
 		"coordinates": 
 		{
 			"lat": -27.59637,
 			"lng": -48.55496
 		}
-	}
+	},
+	{
+		"name": "Beach Park",
+		"address": "Rua Porto das Dunas, 2734 - Porto das Dunas, Aquiraz - CE, 61700-000",
+		"cityState": "Aquiraz - CE",
+		"hours": "Diariamente, das 10h30 às 17h30",
+		"logo": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/2e/Logotipo_do_Beach_Park.png/420px-Logotipo_do_Beach_Park.png",
+		"images": [
+			"https://planetaturviagens.com.br/loja/wp-content/uploads/2021/03/beach-park-acquacirco_zarpo-1.jpg",
+			"https://www.beachpark.com.br/vacation/wp-content/uploads/2021/10/9BAF53A1-0E33-4B4A-B0B7-1CFF01DF-1400x733.jpg",
+			"https://viagensimperdiveis.com/wp-content/uploads/2019/01/IMG_4322.jpg"
+		],
+		"video": "https://www.youtube.com/watch?v=hLYj9R_cj0g&ab_channel=Rimbe",
+		"website": "https://www.beachpark.com.br/",
+		"instagram": "https://www.instagram.com/beachpark/",
+		"email": "contato@beachpark.com.br",
+		"whatsapp": "+55 85 98884-1802",
+		"ticketLink": "https://ingresso.beachpark.com.br/",
+		"ticketValue": "120 à 300",
+		"coordinates": {
+			"lat": -3.84307,
+			"lng": -38.39037
+		}
+	},
+	{
+		"name": "Mirabilândia",
+		"address": "Av. Prof. Andrade Bezerra, 1285 - Salgadinho, Olinda - PE, 53110-110",
+		"cityState": "Olinda - PE",
+		"hours": "Diariamente, das 10h30 às 17h30",
+		"logo": "https://mirabilandia.com.br/wp-content/themes/2018/images/logo-mirabilandia.png",
+		"images": [
+			"https://www.parquedasaves.com.br/assets/images/sobre-nos/fachada/fachada1.jpg",
+			"https://www.parquedasaves.com.br/assets/images/atracoes/encantados-da-floresta/encantados-floresta12.jpg",
+			"https://www.parquedasaves.com.br/assets/images/atracoes/papagaio/parque-das-aves-atracoes-papagaio-11.jpg"
+		],
+		"video": "https://www.youtube.com/watch?v=HfAzzCyBZrE&ab_channel=ParqueDasAves",
+		"website": "https://mirabilandia.com.br/",
+  		"instagram": "https://www.instagram.com/mirabilandiape/",
+ 		"email": "contato@maribilandiaolinda.com.br",
+		"whatsapp": "+55 45 3529-8282",
+		"ticketLink": "https://loja.mirabilandia.com.br/",
+		"ticketValue": "50 à 60",
+		"coordinates": {
+			"lat": -8.03192,
+			"lng": -34.87375
+		}
+	},
+	{
+		"name": "Terra Encantada",
+		"address": "Av. Ayrton Senna, 2800 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-004",
+		"cityState": "Rio de Janeiro - RJ",
+		"hours": "Sábados e Domingos, das 10h às 18h",
+		"logo": "https://a-static.mlcdn.com.br/618x463/parque-terra-encantada-bxartes/alameda/67bd4a674aa13dcd26a0c7b93c46ac63.jpg",
+		"images": [
+			"https://www.tudomarica.com/_midias/wpimages/wp48deee34_06.png",
+			"https://www.tudomarica.com/_midias/wpimages/wp7e4a70fe_06.png",
+			"https://www.tudomarica.com/_midias/wpimages/wp7e4a70fe_03.png"
+		],
+		"video": "https://www.youtube.com/watch?v=UEqZfIHhr3w&ab_channel=ParqueTerraEncantada",
+		"website": "http://www.parqueterraencantada.com.br/",
+		"instagram": "https://www.instagram.com/parqueterraencantada/",
+		"email": "contato@parqueterraencantada.com.br",
+		"whatsapp": "",
+		"ticketLink": "http://www.parqueterraencantada.com.br/ingressos/",
+		"ticketValue": "50 à 100",
+		"coordinates": {
+			"lat": -22.99824,
+			"lng": -43.36506
+		}
+	}	
 ]

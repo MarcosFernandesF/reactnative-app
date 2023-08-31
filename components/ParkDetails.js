@@ -24,10 +24,11 @@ export default class ParkDetailsScreen extends React.Component {
 					/>
 					<View>
 						<Text style={styles.subTopics}>Horário de funcionamento</Text>
-						<Text style={styles.topicText}>{park.address}</Text>
+						<Text style={styles.topicText}>{park.hours}</Text>
 					</View>
 					<View style={styles.container}>
 						<Text style={styles.subTopics}>Localização</Text>
+						<Text style={styles.topicText}>{park.address}</Text>
 						<MapButton text={"Abrir Mapa"} coordinates={park.coordinates}/>
 					</View>
 				</ScrollView>
