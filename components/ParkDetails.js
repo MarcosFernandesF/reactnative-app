@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ScrollView, Text, View, StyleSheet, FlatList, Image } from 'react-native';
 import StyledButton from '../components/StyledButton';
+import MapButton from '../components/MapButton';
 
 export default class ParkDetailsScreen extends React.Component {
     static navigationOptions = {
@@ -27,7 +28,7 @@ export default class ParkDetailsScreen extends React.Component {
 					</View>
 					<View style={styles.container}>
 						<Text style={styles.subTopics}>Localização</Text>
-						<StyledButton text={"Abrir Mapa"} park={park} />
+						<MapButton text={"Abrir Mapa"} coordinates={park.coordinates}/>
 					</View>
 				</ScrollView>
 		)
