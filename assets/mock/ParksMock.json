@@ -14,9 +14,9 @@
 		"website": "https://www.betocarrero.com.br/?gclid=Cj0KCQjw9MCnBhCYARIsAB1WQVUURCUri_wvBMXQuW8jw_sfGkzcQajxighZzqN9DHb2NDLhVo-iL58aAppUEALw_wcB",
 		"instagram": "https://www.instagram.com/betocarrero/?hl=pt-br",
 		"email": "suporteonline@betocarrero.com.br",
-		"whatsapp": "",
+		"phoneNumber": "+55 (47) 3261-2222",
 		"ticketLink": "https://www.betocarrero.com.br/passaportes",
-		"ticketValue": "100 à 200",
+		"ticketValue": "100 à 200 reais",
 		"coordinates": 
 		{
 			"lat": -26.79934,
@@ -34,13 +34,13 @@
 			"https://www.rbsdirect.com.br/imagesrc/24626054.jpg?w=700",
 			"https://www.tribunapr.com.br/wp-content/uploads/sites/2/2020/02/06084203/TUPA16-970x550.jpg"
 		],
-		"video": "https://www.youtube.com/watch?v=9fJvS5gFLoQ&ab_channel=BetoCarreroWorld",
+		"video": "https://www.youtube.com/watch?v=amVBcdE5eXI&t=78s&ab_channel=NDMais",
 		"website": "http://www.parquedediversoes.com/park-tupa.php",
 		"instagram": "https://www.instagram.com/park_tupa/?hl=pt",
 		"email": "tupastore.online@gmail.com",
-		"whatsapp": "",
+		"phoneNumber": "+55 21 97452-4737",
 		"ticketLink": "https://api.whatsapp.com/send?phone=5521974524737&text=Ol%C3%A1%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas.",
-		"ticketValue": "20",	
+		"ticketValue": "20 reais",	
 		"coordinates": 
 		{
 			"lat": -27.59637,
@@ -62,9 +62,9 @@
 		"website": "https://www.beachpark.com.br/",
 		"instagram": "https://www.instagram.com/beachpark/",
 		"email": "contato@beachpark.com.br",
-		"whatsapp": "+55 85 98884-1802",
+		"phoneNumber": "+55 85 8162-7944",
 		"ticketLink": "https://ingresso.beachpark.com.br/",
-		"ticketValue": "120 à 300",
+		"ticketValue": "120 à 300 reais",
 		"coordinates": {
 			"lat": -3.84307,
 			"lng": -38.39037
@@ -74,46 +74,46 @@
 		"name": "Mirabilândia",
 		"address": "Av. Prof. Andrade Bezerra, 1285 - Salgadinho, Olinda - PE, 53110-110",
 		"cityState": "Olinda - PE",
-		"hours": "Diariamente, das 10h30 às 17h30",
+		"hours": "Sexta-feira à Domingo, das 14h às 20h",
 		"logo": "https://mirabilandia.com.br/wp-content/themes/2018/images/logo-mirabilandia.png",
 		"images": [
-			"https://www.parquedasaves.com.br/assets/images/sobre-nos/fachada/fachada1.jpg",
-			"https://www.parquedasaves.com.br/assets/images/atracoes/encantados-da-floresta/encantados-floresta12.jpg",
-			"https://www.parquedasaves.com.br/assets/images/atracoes/papagaio/parque-das-aves-atracoes-papagaio-11.jpg"
+			"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/df/d7/c1/mirabilandia-parque-de.jpg?w=1200&h=-1&s=1",
+			"https://www.maripelomundo.com.br/wp-content/uploads/2019/06/Mirabilandia2.jpg",
+			"https://www.guiadasemana.com.br/contentFiles/system/pictures/2010/1/7405/original/p-rec-mirabilandiapark_r.jpg"
 		],
-		"video": "https://www.youtube.com/watch?v=HfAzzCyBZrE&ab_channel=ParqueDasAves",
+		"video": "https://www.youtube.com/watch?v=6hAdGDCQteY&ab_channel=Hapfun",
 		"website": "https://mirabilandia.com.br/",
   		"instagram": "https://www.instagram.com/mirabilandiape/",
  		"email": "contato@maribilandiaolinda.com.br",
-		"whatsapp": "+55 45 3529-8282",
+		"phoneNumber": "+55 81 3366-2000",
 		"ticketLink": "https://loja.mirabilandia.com.br/",
-		"ticketValue": "50 à 60",
+		"ticketValue": "50 à 60 reais",
 		"coordinates": {
-			"lat": -8.03192,
-			"lng": -34.87375
+			"lat": -8.03157,
+			"lng": -34.87391
 		}
 	},
 	{
-		"name": "Terra Encantada",
-		"address": "Av. Ayrton Senna, 2800 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-004",
-		"cityState": "Rio de Janeiro - RJ",
-		"hours": "Sábados e Domingos, das 10h às 18h",
-		"logo": "https://a-static.mlcdn.com.br/618x463/parque-terra-encantada-bxartes/alameda/67bd4a674aa13dcd26a0c7b93c46ac63.jpg",
+		"name": "Água Show Park",
+		"address": "Rodovia Armando Calil Bullos, SC-403, 3868 - Ingleses Norte, Florianópolis - SC, 88058-000",
+		"cityState": "Florianópolis - SC",
+		"hours": "Sexta-feira à Domingo, das 10h às 17h",
+		"logo": "https://app.tindo.com.br/tindo/arquivos/empresas/405/site/930c9f2c-b3be-49ce-9066-fb3746960401.png",
 		"images": [
-			"https://www.tudomarica.com/_midias/wpimages/wp48deee34_06.png",
-			"https://www.tudomarica.com/_midias/wpimages/wp7e4a70fe_06.png",
-			"https://www.tudomarica.com/_midias/wpimages/wp7e4a70fe_03.png"
+			"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/0a/28/5d/agua-show-park.jpg?w=1200&h=-1&s=1",
+			"https://www.civitatis.com/f/brasil/florianopolis/galeria/tour-agua-show-park.jpg",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAZiTZKfWaHyjWvApQKnzWuPgU50mFwoat4Maj-jGUxhdfSomL8WDTAibDply0oxfEHM&usqp=CAU"
 		],
-		"video": "https://www.youtube.com/watch?v=UEqZfIHhr3w&ab_channel=ParqueTerraEncantada",
-		"website": "http://www.parqueterraencantada.com.br/",
-		"instagram": "https://www.instagram.com/parqueterraencantada/",
-		"email": "contato@parqueterraencantada.com.br",
-		"whatsapp": "",
-		"ticketLink": "http://www.parqueterraencantada.com.br/ingressos/",
-		"ticketValue": "50 à 100",
+		"video": "https://www.youtube.com/watch?v=lFG-ihSXuVo&ab_channel=IdeiasFilmes-ProdutoradeV%C3%ADdeos",
+		"website": "https://www.aguashowpark.com.br/",
+		"instagram": "https://www.instagram.com/aguashowpark/",
+		"email": "reservas@aquashowpark.com",
+		"phoneNumber": "+55 (48) 8436-0596",
+		"ticketLink": "https://www.aguashowpark.com.br/loja/",
+		"ticketValue": "60 à 70 reais",
 		"coordinates": {
-			"lat": -22.99824,
-			"lng": -43.36506
+			"lat": -27.44381,
+			"lng": -48.41947
 		}
 	}	
 ]

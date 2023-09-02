@@ -1,6 +1,7 @@
 import * as React from 'react';
 import globalStyle from '../assets/styles/style'
-import { Linking, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Linking, Text, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 export default class MapButton extends React.Component {
     OpenMap(lat, lng) {
@@ -15,12 +16,26 @@ export default class MapButton extends React.Component {
 	render () {
 		const { coordinates, text } = this.props;
 		return (
-			<TouchableOpacity 
-				style={globalStyle.button} 
-				onPress={() => this.OpenMap(coordinates.lat, coordinates.lng)}>
-				<Text style={globalStyle.buttonText}>{text}</Text>
-			</TouchableOpacity>
+			<View style={[styles.container, globalStyle.button]}>
+				<TouchableOpacity 
+					style={styles.buttonContent} 
+					onPress={() => this.OpenMap(coordinates.lat, coordinates.lng)}>
+						<Text style={[globalStyle.buttonText]}>{text}</Text>
+						<Icon name="map-marker-outline" size={30}/>
+				</TouchableOpacity>
+			</View>
 		);
 	};
 }
 
+const styles = StyleSheet.create({
+	container: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	buttonContent: {
+		flexDirection: 'row',
+		alignItems: 'center',
+	},
+});

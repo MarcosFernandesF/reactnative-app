@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { ScrollView, Text, View, StyleSheet, FlatList, Image } from 'react-native';
-import StyledButton from '../components/StyledButton';
+import GenericButton from '../components/GenericButton';
 import MapButton from '../components/MapButton';
+import globalStyle from '../assets/styles/style'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 export default class ParkDetailsScreen extends React.Component {
     static navigationOptions = {
@@ -30,6 +32,37 @@ export default class ParkDetailsScreen extends React.Component {
 						<Text style={styles.subTopics}>Localização</Text>
 						<Text style={styles.topicText}>{park.address}</Text>
 						<MapButton text={"Abrir Mapa"} coordinates={park.coordinates}/>
+					</View>
+					<View style={styles.container}>
+						<Text style={styles.subTopics}>Ingresso</Text>
+						<Text style={styles.topicText}>Valor do ingresso: {park.ticketValue}</Text>
+						<View style={[globalStyle.button, styles.flexContainer]}>
+							<GenericButton text={"Compre seus ingressos"} link={park.ticketLink}/>
+							<Icon name='ticket' size={30} style={styles.icon}/>
+						</View>
+					</View>
+					<View style={styles.container}>
+						<Text style={styles.subTopics}>Contato e Redes Sociais</Text>
+						<Text style={styles.topicText}>Email: {park.email}</Text>
+						<View style={[globalStyle.button, styles.flexContainer]}>
+							<GenericButton text={"Website"} link={park.website}/>
+							<Icon name='earth' size={30} style={styles.icon}/>
+						</View>
+						<View style={[globalStyle.button, styles.flexContainer]}>
+							<GenericButton text={"Instagram"} link={park.instagram}/>
+							<Icon name='instagram' size={30} style={styles.icon}/>
+						</View>
+						<View style={[globalStyle.button, styles.flexContainer]}>
+							<GenericButton text={"WhatsApp"} phoneNumber={park.phoneNumber}/>
+							<Icon name='whatsapp' size={30} style={styles.icon}/>
+						</View>
+					</View>
+					<View style={styles.container}>
+						<Text style={styles.subTopics}>Video Promocional</Text>
+						<View style={[globalStyle.button, styles.flexContainer]}>
+							<GenericButton text={"Assistir"} link={park.video}/>
+							<Icon name='play' size={30} style={styles.icon}/>
+						</View>
 					</View>
 				</ScrollView>
 		)
@@ -64,6 +97,11 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
     	justifyContent: 'center',
 	},
+	flexContainer:{
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
 	imageStyle: {
 		marginTop: 15,
 		marginRight: 5,
@@ -72,4 +110,7 @@ const styles = StyleSheet.create({
     	borderWidth: 2,
     	borderColor: 'black',
 	  },
+	icon: {
+		marginLeft: 10
+	}
 })

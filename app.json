@@ -1,16 +1,10 @@
 {
   "expo": {
-    "name": "atividade-reactnative",
+    "name": "react-app",
     "slug": "snack-c53b76e9-f8ad-46cf-82b3-d57e943f443f",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/images/park-logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -18,13 +12,8 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
     }
   }
 }
