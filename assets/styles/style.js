@@ -2,21 +2,21 @@ import { StyleSheet } from 'react-native';
 
 module.exports = StyleSheet.create({
     buttonContainer: {
-        marginTop: -20,
+    	marginTop: -20,
         alignItems: 'center',
         justifyContent: 'center',
-      },
-      button: {
+    },
+    button: {
         backgroundColor: 'lightseagreen',
         minWidth: '50%',
         marginTop: 20,
         padding: 15,
         borderRadius: 10,
-      },
-      buttonText: {
+    },
+    buttonText: {
         fontSize: 16,
         fontWeight: 'bold',
         color: 'white',
-        textAlign: 'center', // Alinhar o texto no centro do botão
-      },
+        textAlign: 'center',
+    },
 });

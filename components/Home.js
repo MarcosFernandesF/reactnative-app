@@ -10,7 +10,7 @@ export default class HomeScreen extends React.Component {
     	headerTitleAlign: 'center',
   	};
 
-	  async componentDidMount() {
+	async componentDidMount() {
 		if (await AsyncStorage.getItem('favoriteParks') === null)
 		{
 			console.log('Criou novo array');
@@ -19,7 +19,7 @@ export default class HomeScreen extends React.Component {
 	};
 
 	render () {
-    	const {navigate} = this.props.navigation;
+    	const { navigate } = this.props.navigation;
     	return (
       	<View>
         	<View style={styles.container}>

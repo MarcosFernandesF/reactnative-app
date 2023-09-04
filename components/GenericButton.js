@@ -3,7 +3,7 @@ import globalStyle from '../assets/styles/style'
 import { BackHandler, Text, TouchableOpacity, Linking } from 'react-native';
 
 export default class GenericButton extends React.Component {
-	handleTextPress = () => {
+	handlePress = () => {
 		const { exit, navigate, screen, park, phoneNumber, link } = this.props;
 		if (phoneNumber) {
 			const whatsappURL = `whatsapp://send?phone=${phoneNumber}`;
@@ -28,7 +28,7 @@ export default class GenericButton extends React.Component {
 	render() {
 		const { text } = this.props;
 		return (
-			<TouchableOpacity onPress={this.handleTextPress}>
+			<TouchableOpacity onPress={this.handlePress}>
 				<Text style={globalStyle.buttonText}>{text}</Text>
 			</TouchableOpacity>
 		);

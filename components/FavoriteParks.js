@@ -24,10 +24,20 @@ export default class FavoriteParksScreen extends React.Component {
 		} catch (error) {
 		  console.error('Error loading favorite parks:', error);
 		}
-	  }
+	}
+
+	async componentDidUpdate() {
+		try {
+		  let favoriteParks = JSON.parse(await AsyncStorage.getItem('favoriteParks'));
+		  if (favoriteParks) {
+			this.setState({ parks: favoriteParks });
+		  }
+		} catch (error) {
+		  console.error('Error loading favorite parks:', error);
+		}
+	}
 
 	render () {
-		const {navigate} = this.props.navigation;
 		const { parks } = this.state;
 		return(
     		<FlatList
@@ -36,7 +46,7 @@ export default class FavoriteParksScreen extends React.Component {
       		<View style={styles.container}>
 				<Image style={styles.logo} source={{ uri: item.logo }} />
 				<Text>{item.cityState}</Text>
-				<FavoriteButton text={item.name} navigate={navigate} screen={'ParkDetails'} park={item} />
+				<FavoriteButton text={item.name} screen={'ParkDetails'} park={item} />
       		</View>}
 			/>
 		);
