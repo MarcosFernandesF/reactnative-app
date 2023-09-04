@@ -9,6 +9,7 @@ export default class ParksListScreen extends React.Component {
 	};
 
 	render () {
+		const {navigate} = this.props.navigation;
 		return(
     		<FlatList
     		data={parks}
@@ -16,7 +17,7 @@ export default class ParksListScreen extends React.Component {
       		<View style={styles.container}>
       		  	<Image style={styles.logo} source={{uri: item.logo }} />
        		 	<Text>{item.cityState}</Text>
-      		  	<FavoriteButton text={item.name} screen={'ParkDetails'} park={item}/>
+      		  	<FavoriteButton text={item.name} navigate={navigate} screen={'ParkDetails'} park={item}/>
       		</View>}
 			/>
 		);

@@ -12,6 +12,7 @@ export default class ParkDetailsScreen extends React.Component {
 
 	render () {
 		const park = this.props.navigation.getParam('park');
+		const { navigate } = this.props.navigation;
 		return (
 			<ScrollView>
 				<View>
@@ -37,7 +38,7 @@ export default class ParkDetailsScreen extends React.Component {
 					<Text style={styles.subTopics}>Ingresso</Text>
 					<Text style={styles.topicText}>Valor do ingresso: {park.ticketValue}</Text>
 					<View style={[globalStyle.button, styles.flexContainer]}>
-						<GenericButton text={"Compre seus ingressos"} link={park.ticketLink}/>
+						<GenericButton text={"Compre seus ingressos"} navigate={navigate} link={park.ticketLink}/>
 						<Icon name='ticket' size={30} style={styles.icon}/>
 					</View>
 				</View>
