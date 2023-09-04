@@ -2,12 +2,21 @@ import * as React from 'react';
 import globalStyle from '../assets/styles/style'
 import { View, Text, Image, StyleSheet } from 'react-native';
 import GenericButton from './GenericButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default class HomeScreen extends React.Component {
 	static navigationOptions = {
     	title: "Explorador de Parques",
     	headerTitleAlign: 'center',
   	};
+
+	  async componentDidMount() {
+		if (await AsyncStorage.getItem('favoriteParks') === null)
+		{
+			console.log('Criou novo array');
+			await AsyncStorage.setItem('favoriteParks', JSON.stringify(new Array()));
+		}
+	};
 
 	render () {
     	const {navigate} = this.props.navigation;

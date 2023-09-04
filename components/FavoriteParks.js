@@ -19,9 +19,7 @@ export default class FavoriteParksScreen extends React.Component {
 		try {
 		  let favoriteParks = JSON.parse(await AsyncStorage.getItem('favoriteParks'));
 		  if (favoriteParks) {
-			console.log("Atribuiu estado");
 			this.setState({ parks: favoriteParks });
-			console.log(this.state.parks);
 		  }
 		} catch (error) {
 		  console.error('Error loading favorite parks:', error);

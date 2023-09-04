@@ -43,8 +43,6 @@ export default class FavoriteButton extends React.Component {
 			favoriteParks.push(park);
 			await AsyncStorage.setItem('favoriteParks', JSON.stringify(favoriteParks));
 		}
-		console.log(favoriteParks);
-		console.log();
 	};
 
 	render () {

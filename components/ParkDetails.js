@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text, View, StyleSheet, FlatList, Image } from 'react-native';
+import { ScrollView, Text, View, StyleSheet, FlatList, Image, Linking, TouchableOpacity } from 'react-native';
 import GenericButton from '../components/GenericButton';
 import MapButton from '../components/MapButton';
 import globalStyle from '../assets/styles/style'
@@ -43,7 +43,10 @@ export default class ParkDetailsScreen extends React.Component {
 					</View>
 					<View style={styles.container}>
 						<Text style={styles.subTopics}>Contato e Redes Sociais</Text>
-						<Text style={styles.topicText}>Email: {park.email}</Text>
+						<View style={[globalStyle.button, styles.flexContainer]}>
+							<GenericButton text={"Email"} link={`mailto:${park.email}`}/>
+							<Icon name='email' size={30} style={styles.icon}/>
+						</View>
 						<View style={[globalStyle.button, styles.flexContainer]}>
 							<GenericButton text={"Website"} link={park.website}/>
 							<Icon name='earth' size={30} style={styles.icon}/>

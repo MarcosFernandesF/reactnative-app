@@ -7,13 +7,10 @@ export default class GenericButton extends React.Component {
 		const { exit, navigate, screen, park, phoneNumber, link } = this.props;
 		if (phoneNumber) {
 			const whatsappURL = `whatsapp://send?phone=${phoneNumber}`;
-
 			Linking.canOpenURL(whatsappURL)
 				.then((supported) => {
 					if (supported) {
 						Linking.openURL(whatsappURL);
-					} else {
-						console.log("WhatsApp não está instalado.");
 					}
 				})
 				.catch((error) => {
