@@ -22,7 +22,7 @@ export default class HomeScreen extends React.Component {
 					<GenericButton screen={'ParkList'} text={'Lista de Parques'} navigate={navigate} />
 				</View>
 				<View style={globalStyle.button}>
-					<GenericButton screen={''} text={'Parques Favoritos'} navigate={navigate} />
+					<GenericButton screen={'FavoriteParks'} text={'Parques Favoritos'} navigate={navigate} />
 				</View>
 				<View style={globalStyle.button}>
 					<GenericButton text={'Sair'} navigate={navigate} exit={true} />
